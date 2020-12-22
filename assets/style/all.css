@@ -10054,7 +10054,8 @@ a {
 /* utilities */
 .bg-cover {
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+  background-repeat: no-repeat; }
 
 .pic-introduce {
   padding-top: 50%; }
@@ -10074,7 +10075,7 @@ a {
 .material-icons {
   vertical-align: bottom; }
 
-.line-through {
+.del {
   text-decoration: line-through;
   color: #8D8D8D; }
 
@@ -10135,8 +10136,10 @@ a {
 /* pages */
 .banner {
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index1.jpg");
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100); }
+  height: 870px; }
+  @media (max-width: 767px) {
+    .banner {
+      height: 480px; } }
 
 .btn-outline-white {
   border: 2px solid #ffffff;
@@ -10227,5 +10230,8 @@ a {
 
 .border-primary {
   border-color: #916000 !important; }
+
+.mem-link:hover {
+  color: #916000 !important; }
 
 /*# sourceMappingURL=all.css.map */

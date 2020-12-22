@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* bootstrap */
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
@@ -13105,6 +13104,7 @@ a {
 .bg-cover {
   background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .pic-introduce {
@@ -13135,7 +13135,7 @@ a {
   vertical-align: bottom;
 }
 
-.line-through {
+.del {
   text-decoration: line-through;
   color: #8D8D8D;
 }
@@ -13214,8 +13214,13 @@ a {
 /* pages */
 .banner {
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index1.jpg");
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  height: 870px;
+}
+
+@media (max-width: 767px) {
+  .banner {
+    height: 480px;
+  }
 }
 
 .btn-outline-white {
@@ -13303,7 +13308,7 @@ a {
 
 @media (max-width: 767px) {
   .cart-title {
-    font-size: 　20px;
+    font-size: 20px;
   }
 }
 
@@ -13329,5 +13334,9 @@ a {
 
 .border-primary {
   border-color: #916000 !important;
+}
+
+.mem-link:hover {
+  color: #916000 !important;
 }
 /*# sourceMappingURL=all.css.map */

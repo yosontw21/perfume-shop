@@ -10075,10 +10075,6 @@ a {
 .material-icons {
   vertical-align: bottom; }
 
-.del {
-  text-decoration: line-through;
-  color: #8D8D8D; }
-
 .text-black {
   color: #000 !important; }
 
@@ -10136,10 +10132,7 @@ a {
 /* pages */
 .banner {
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index1.jpg");
-  height: 870px; }
-  @media (max-width: 767px) {
-    .banner {
-      height: 480px; } }
+  min-height: calc(100vh - 56px); }
 
 .btn-outline-white {
   border: 2px solid #ffffff;
